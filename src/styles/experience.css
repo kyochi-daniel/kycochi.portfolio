@@ -1,0 +1,115 @@
+.experience {
+  max-width: 75rem;
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+}
+
+.experience .subtitle {
+  color: #e0e0e0;
+}
+
+.paragraph-experience {
+  font-size: 1.25rem;
+  line-height: 1.33;
+  margin-bottom: 3.75rem;
+  color: #525252;
+}
+
+.title-projects {
+  text-transform: uppercase;
+
+  margin-bottom: 1.5625rem;
+}
+
+.card-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  background-color: #f5f5f5;
+
+  padding: 1rem;
+  border-radius: 4px;
+
+  position: relative;
+
+  margin-bottom: 1.5rem;
+}
+
+.card-projects::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#6bb3f5, #2f618e);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.title-stack {
+  font-weight: bold;
+  font-size: 1.17rem;
+}
+
+.card-projects a {
+  color: #2f618e;
+}
+
+.card-projects a:hover {
+  color: #6bb3f5;
+}
+
+.stacks {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.7rem;
+}
+
+.stacks li {
+  background-color: #fff;
+
+  font-size: 0.875rem;
+
+  padding: 10px;
+
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.stacks li:hover {
+  cursor: default;
+
+  background: #2f618e;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .experience {
+    padding-top: 0;
+
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .experience .subtitle {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .card-projects {
+    gap: 1rem;
+  
+    padding: 0.75rem;
+  }
+
+  .card-projects h3, .title-stack{
+    font-size: 1.1rem;
+  }
+}

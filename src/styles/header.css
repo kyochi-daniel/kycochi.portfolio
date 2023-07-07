@@ -1,0 +1,68 @@
+header {
+  max-width: 75rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2.5rem 1.25rem;
+}
+
+.navbar {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.navbar li a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  text-decoration: none;
+
+  color: #141414;
+}
+
+#download {
+  background-color: #2f618e;
+  color: #fff;
+
+  padding: 1rem 1.5rem;
+
+  border-radius: 4px;
+
+  transition: 0.2s;
+}
+
+#download:hover {
+  filter: opacity(0.9);
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .navbar {
+    justify-content: center;
+    gap: 3rem 1.4rem;
+  }
+
+  .navbar a {
+    background-color: #f5f5f5;
+
+    padding: 1rem 1.5rem;
+
+    border-radius: 4px;
+
+    transition: 0.2s;
+  }
+
+  .navbar a:hover {
+    filter: brightness(0.9);
+  }
+}

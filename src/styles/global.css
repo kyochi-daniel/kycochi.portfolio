@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase;
+
+  max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitle {
+    font-size: 48px;
+    word-break: normal;
+  }
+}
