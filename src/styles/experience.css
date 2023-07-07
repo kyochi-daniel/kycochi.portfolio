@@ -104,7 +104,6 @@
   }
 
   .card-projects {
-    grid-template-columns: 1fr;
     gap: 1rem;
   
     padding: 0.75rem;
